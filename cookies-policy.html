@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shoogloo-Network</title>
+    <!-- Fevicon Icon CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <main class="min-h-screen flex-col items-center justify-center">
+        <!-- Header Part Html Start -->
+        <header
+            class="fixed top-0 left-0 right-0 text-white px-2 sm:p-4 flex justify-between items-center z-[100] sm:h-[90px] h-[65px] transition-all duration-300 ease-in-out">
+            <div class="flex items-center z-[100]">
+                <a class="sm:w-[280px] w-[200px] sm:h-[80px] h-[50px] mr-2" href="index.html">
+                    <img alt="logo" loading="lazy" width="260" height="70"
+                        class="sm:w-[280px] sm:h-[90px] w-[180px] h-[55px]" src="images/headerLogob52e.png">
+                </a>
+            </div>
+            <div class="z-[100] flex items-center justify-between">
+                <a class="mbtn-hide text-center rounded-full w-[80px] sm:w-[130px] sm:text-[20px] leading-[normal] tracking-normal py-2 sm:p-2 z-50 cursor-pointer orange-btn text-sm sm:text-lg uppercase  border-orange-600 hidden sm:block"
+                    href="/login.html">
+                    <span class="font-semibold uppercase">Login</span>
+                    <span class="bg"></span>
+                </a>
+                <a class="mbtn-hide text-center rounded-full w-[90px] sm:w-[130px] sm:text-[20px] leading-[normal] tracking-normal py-2 sm:p-2 z-50 cursor-pointer orange-btn text-sm sm:text-lg uppercase border-orange-600 sm:mx-10 mx-2 sm:mr-12 hidden sm:block"
+                    href="/register.html">
+                    <span class="font-semibold uppercase">Register</span>
+                    <span class="bg"></span>
+                </a>
+                <button
+                    class="btn-menu text-white focus:outline-none flex items-center justify-center focus:text-white border-opacity-50 border-orange-300">
+                    <div
+                        class="navigation w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] bg-[#342929] bg-opacity-20 rounded-full flex items-center justify-center border border-opacity-30 border-white">
+                        <svg class="first-icon block" width="34" height="27" viewBox="0 0 34 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 1">
+                                <rect id="Rectangle 2" x="0.625977" y="11.75" width="33.0944" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 3" x="0.625977" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 5" x="0.625977" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 4" x="18.0693" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 6" x="18.0693" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                            </g>
+                        </svg>
+                        <svg class="second-icon hidden" width="34" height="27" viewBox="0 0 34 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 1">
+                                <rect id="Rectangle 2" x="0.625977" y="11.75" width="33.0944" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 3" x="0.625977" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 5" x="0.625977" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="transparent"></rect>
+                                <rect id="Rectangle 4" x="18.0693" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="transparent"></rect>
+                                <rect id="Rectangle 6" x="18.0693" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                            </g>
+                        </svg>
+                        <img alt="logo" loading="lazy" class="menu-btnminus" src="images/minus.png"
+                            style="color: transparent;">
+                    </div>
+                </button>
+            </div>
+            <nav class="menu menu-custbtn fadeInRight p-10 pl-7 self-center text-white fixed top-0 left-0 w-full min-h-screen bg-[#211515] items-center justify-center z-[50] sm:block hidden">
+                <div class="relative p-10 pl-7 top-5 sm:-top-4 self-center z-10 text-white fadeInLeft2">
+                    <ul class="flex flex-col items-center space-y-4">
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/login.html"> LogIn </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/register.html"> Register </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/publishers.html"> Publishers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/advertisers.html"> Advertisers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/contact.html"> Contact Us </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/about.html"> About Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="menu2 menu-custbtn fadeInRight2 p-10 pl-7 self-center text-white fixed top-0 left-0 w-full min-h-screen bg-[#211515] items-center justify-center z-[50] sm-hidden block">
+                <div class="relative p-10 pl-7 top-5 sm:-top-4 self-center z-10 text-white fadeInLeft2">
+                    <ul class="flex flex-col items-center space-y-4">
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/login.html"> LogIn </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/register.html"> Register </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/publishers.html"> Publishers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/advertisers.html"> Advertisers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/contact.html"> Contact Us </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/about.html"> About Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <section class="flex item-center justify-center flex-col mt-20 sm:mt-24 px-4 pb-4 sm:pb-10 sm:px-24">
+			<h1 class="text-3xl font-bold text-center pt-2 p-4 sm:p-5">Cookies Policy</h1>
+			<div class="text-sm">
+				<p class="text-justify my-2">Cookies are a set of personal data which is automatically collected at the
+					time when you use any website. The major function of cookies is to remember important things about
+					you so that you can get customized search results. Generally, we at Shoogloo Network also collect
+					major cookies to provide users with enhanced services and customized results. We also collect
+					cookies from third parties to understand your search behaviour and engagement pattern. As we collect
+					all such details, we would like you to be aware of all such information that is being collected from
+					you as cookies.</p>
+				<p class="text-justify my-2">This Privacy Policy may be amended or updated from time to time. If we make
+					any material changes to this Privacy Policy, we will post a notice of these changes on our website
+					and in this Privacy Policy. You are advised to consult this Privacy Policy regularly for any
+					changes.<!-- --> </p>
+			</div>
+			<div class="text-base py-3 text-justify">
+				<h2 class="font-semibold text-lg">Types of cookies:</h2>
+				<p class="text-justify my-2">There are basically three types of cookies:<!-- --> </p>
+				<ul class="text-sm ml-2">
+					<li class="my-2">1. Important or necessary cookies: Without this, the website stops work<!-- -->
+					</li>
+					<li class="my-2">2. Performance cookies: It affects the speed of the website.<!-- --> </li>
+					<li class="my-2">3. Personal cookies: These tell a lot about the users and their search
+						behaviour.<!-- --> </li>
+				</ul>
+				<p class="text-justify my-2 font-medium">Other types of cookies: </p>
+				<ul class="text-sm ml-6">
+					<li class="my-2 list-disc">Session cookies: Temporary data for single website visits.</li>
+					<li class="my-2 list-disc">Persistent cookies: Store information for future sessions.</li>
+					<li class="my-2 list-disc">Analytical cookies: Track and analyze website performance data.</li>
+					<li class="my-2 list-disc">Targeting cookies: Personalize content based on user preferences.</li>
+					<li class="my-2 list-disc">Advertising cookies: Deliver personalized advertisements to users.</li>
+					<li class="my-2 list-disc">Social media cookies: Enable interaction with social media platforms.
+					</li>
+				</ul>
+				<p class="text-sm text-justify my-2">The main purpose of cookies is to enhance the user experience.
+					However, if you are not comfortable, you may choose not to share cookies due to the fear of privacy
+					breaches. However, that stops you from accessing various websites and availing multiple services.
+					Also, getting customized search results will be difficult. Therefore, the decision is yours to
+					choose or not choose cookies for sharing.</p>
+			</div>
+		</section>
+        <!-- Section Part Html End -->
+
+        <!-- Footer Part Html Start -->
+        <footer class="w-100 bg-[#FFF8F1] text-black py-2 px-3 md:p-12 sm:p-12 sm:py-8">
+            <div class="container mx-auto flex flex-col sm:flex-row justify-between m-10 mb-0">
+                <div class="flex items-start justify-center sm:justify-start flex-col  border-b sm:border-b-0">
+                    <a class="w-[260px] h-[80px] mr-2" href="index.html">
+                        <img alt="logo" loading="lazy" width="250" height="70" src="images/footerLogo.png">
+                    </a>
+                    <p class="pt-10 pl-0  font-mulish font-bold">Shoogloo Network Private Limited</p>
+                    <p class="pt-2 pl-0  font-mulish text-[14px] font-bold">Address:</p>
+                    <p class="pt-2 pl-0  font-mulish text-[14px] tracking-normal">UNIT 461 – 463, 4th Floor,</p>
+                    <p class="pt-1 pl-0  font-mulish text-[14px] tracking-normal">JMD Megapolis, Sector 48,</p>
+                    <p class="pt-1 pl-0  font-mulish text-[14px]  tracking-normal"> Gurgaon, Haryana – 122001, India 
+                    </p>
+                </div>
+                <div class="flex items-start justify-between">
+                    <div class="pt-2">
+                        <h3
+                            class="mb-2 text-black font-mulish  text-[16px] sm:text-lg capitalize font-medium leading-normal tracking-tight">
+                            Newsletter</h3>
+                        <p
+                            class="text-black font-gilroy  text-[28px] sm:text-4xl font-light leading-normal capitalize py-1 sm:py-4">
+                            Stay up to date</p>
+                        <div class="flex items-center flex-col relative">
+                            <div class="flex items-center border-b border-black py-3">
+                                <div class="mr-2"><svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5" clip-path="url(#clip0_124_3384)">
+                                            <path
+                                                d="M14.3689 2.96367C14.3084 2.95742 14.2473 2.95742 14.1867 2.96367H1.74227C1.66251 2.9649 1.58328 2.97685 1.50671 2.99922L7.92894 9.39478L14.3689 2.96367Z"
+                                                fill="black"></path>
+                                            <path
+                                                d="M15.0267 3.58154L8.55557 10.026C8.38902 10.1915 8.16373 10.2845 7.9289 10.2845C7.69407 10.2845 7.46878 10.1915 7.30223 10.026L0.888899 3.63043C0.869183 3.70289 0.85873 3.77756 0.857788 3.85265V12.7415C0.857788 12.9773 0.951439 13.2034 1.11814 13.3701C1.28484 13.5368 1.51093 13.6304 1.74668 13.6304H14.1911C14.4269 13.6304 14.653 13.5368 14.8197 13.3701C14.9864 13.2034 15.08 12.9773 15.08 12.7415V3.85265C15.0765 3.76006 15.0585 3.66858 15.0267 3.58154ZM2.35557 12.7415H1.73779V12.106L4.9689 8.90154L5.59557 9.52821L2.35557 12.7415ZM14.1822 12.7415H13.56L10.32 9.52821L10.9467 8.90154L14.1778 12.106L14.1822 12.7415Z"
+                                                fill="black"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_124_3384">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0 0.297119)"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <div class="ml-2 bg-[#FFF8F1]"><input type="email" id="email"
+                                        class="w-[300px] bg-[#FFF8F1] focus:outline-none outline-none text-sm font-medium"
+                                        placeholder="Enter Email Address" name="email" value=""></div>
+                            </div>
+                        </div>
+                        <div class="w-[175px] mt-10"><button
+                                class="flex items-center justify-center border-orange-600 rounded-full w-[175px] text-white text-[20px] leading-[normal] tracking-normal p-2 orange-btn z-50 cursor-pointer"><span
+                                    class="text-lg mt-1 font-semibold uppercase">Subscribe</span><span
+                                    class="bg"></span></button></div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between">
+                    <div class="pt-2 mb-4">
+                        <h3
+                            class="mb-2 text-black font-mulish text-lg capitalize font-medium leading-normal tracking-tight">
+                            Quick Links</h3>
+                        <ul class="text-sm pt-2">
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="about.html">About us</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="advertisers.html">Advertisers</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="publishers.html">Publishers</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="/login.html">Publisher Login</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="contact.html">Contact us</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="cookies-policy.html">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto flex justify-center">
+                <div class="flex items-center justify-center w-full  md:w-1/4">
+                    <p class="text-black font-mulish text-sm font-normal leading-normal opacity-40 mt-10">© 2024
+                        Shoogloo.com</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Part Html End -->
+    </main>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Our Script JS -->
+    <script src="js/script.js"></script>
+    
+
+</body>
+
+</html>

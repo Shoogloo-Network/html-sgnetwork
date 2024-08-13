@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shoogloo-Network</title>
+    <!-- Fevicon Icon CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <main class="min-h-screen flex-col items-center justify-center">
+        <!-- Header Part Html Start -->
+        <header
+            class="fixed top-0 left-0 right-0 text-white px-2 sm:p-4 flex justify-between items-center z-[100] sm:h-[90px] h-[65px] transition-all duration-300 ease-in-out">
+            <div class="flex items-center z-[100]">
+                <a class="sm:w-[280px] w-[200px] sm:h-[80px] h-[50px] mr-2" href="index.html">
+                    <img alt="logo" loading="lazy" width="260" height="70"
+                        class="sm:w-[280px] sm:h-[90px] w-[180px] h-[55px]" src="images/headerLogob52e.png">
+                </a>
+            </div>
+            <div class="z-[100] flex items-center justify-between">
+                <a class="mbtn-hide text-center rounded-full w-[80px] sm:w-[130px] sm:text-[20px] leading-[normal] tracking-normal py-2 sm:p-2 z-50 cursor-pointer orange-btn text-sm sm:text-lg uppercase  border-orange-600 hidden sm:block"
+                    href="/login.html">
+                    <span class="font-semibold uppercase">Login</span>
+                    <span class="bg"></span>
+                </a>
+                <a class="mbtn-hide text-center rounded-full w-[90px] sm:w-[130px] sm:text-[20px] leading-[normal] tracking-normal py-2 sm:p-2 z-50 cursor-pointer orange-btn text-sm sm:text-lg uppercase border-orange-600 sm:mx-10 mx-2 sm:mr-12 hidden sm:block"
+                    href="/register.html">
+                    <span class="font-semibold uppercase">Register</span>
+                    <span class="bg"></span>
+                </a>
+                <button
+                    class="btn-menu text-white focus:outline-none flex items-center justify-center focus:text-white border-opacity-50 border-orange-300">
+                    <div
+                        class="navigation w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] bg-[#342929] bg-opacity-20 rounded-full flex items-center justify-center border border-opacity-30 border-white">
+                        <svg class="first-icon block" width="34" height="27" viewBox="0 0 34 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 1">
+                                <rect id="Rectangle 2" x="0.625977" y="11.75" width="33.0944" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 3" x="0.625977" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 5" x="0.625977" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 4" x="18.0693" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 6" x="18.0693" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                            </g>
+                        </svg>
+                        <svg class="second-icon hidden" width="34" height="27" viewBox="0 0 34 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 1">
+                                <rect id="Rectangle 2" x="0.625977" y="11.75" width="33.0944" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 3" x="0.625977" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 5" x="0.625977" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="transparent"></rect>
+                                <rect id="Rectangle 4" x="18.0693" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="transparent"></rect>
+                                <rect id="Rectangle 6" x="18.0693" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                            </g>
+                        </svg>
+                        <img alt="logo" loading="lazy" class="menu-btnminus" src="images/minus.png"
+                            style="color: transparent;">
+                    </div>
+                </button>
+            </div>
+            <nav
+                class="menu menu-custbtn fadeInRight p-10 pl-7 self-center text-white fixed top-0 left-0 w-full min-h-screen items-center justify-center z-[50] sm:block hidden">
+                <div class="relative p-10 pl-7 top-5 sm:-top-4 self-center z-10 text-white fadeInLeft2">
+                    <ul class="flex flex-col items-center space-y-4">
+                        <li>
+                            <a target="_blank"
+                                class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/login.html"> LogIn </a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/register.html"> Register </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/publishers.html"> Publishers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/advertisers.html"> Advertisers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/contact.html"> Contact Us </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/about.html"> About Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav
+                class="menu2 menu-custbtn fadeInRight2 p-10 pl-7 self-center text-white fixed top-0 left-0 w-full min-h-screen items-center justify-center z-[50] sm-hidden block">
+                <div class="relative p-10 pl-7 top-5 sm:-top-4 self-center z-10 text-white fadeInLeft2">
+                    <ul class="flex flex-col items-center space-y-4">
+                        <li>
+                            <a target="_blank"
+                                class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/login.html"> LogIn </a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/register.html"> Register </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/publishers.html"> Publishers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/advertisers.html"> Advertisers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/contact.html"> Contact Us </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/about.html"> About Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="relative mt-16 sm:mt-0">
+            <img alt="image" loading="lazy" width="1200" height="800" class="w-full h-auto object-cover sm:block hidden"
+                style="color:transparent;width:100%;height:auto" sizes="100vw" src="images/Publishersbanner.png" />
+            <img alt="mobileimage" loading="lazy" width="1200" height="800"
+                class="w-full h-auto sm:h-[100vh] object-cover sm:hidden block" sizes="100vw"
+                src="images/Publishersmobilebanneranner.png" />
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="bg-[#FFF8F1] pb-2 sm:pb-10 relative overflow-hidden">
+            <div class="w-[70%] m-auto absolute left-0 right-0 top-10">
+                <img alt="Image" loading="lazy" width="1000" height="100" src="images/Benefits.png" />
+            </div>
+            <div
+                class="text-3xl sm:text-[48px] font-extralight text-center p-10 pb-0 md:pb-10 capitalize sm:pt-10 fadeInLeft">
+                <h2 class="font-extralight pb-2">What Is <span class="font-bold">With Us</span></h2>
+            </div>
+            <div class="overflow-hidden px-2 sm:px-10 fadeInUpRotate">
+                <div class="hidden flex-col px-2 sm:pl-8 sm:pr-5 sm:flex">
+                    <div class="flex justify-center sm:justify-start mb-5 flex-wrap">
+                        <div
+                            class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                            <div class="imageIcons relative">
+                                <img alt="Icon" loading="lazy" width="60" height="60" class="mb-10 z-20 relative left-3"
+                                    src="images/iconoir_network.svg" />
+                                <div
+                                    class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                </div>
+                                <p class="text-xl relative z-20 capitalize">Wide Selection of Campaigns </p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                            <div class="imageIcons relative">
+                                <img alt="Icon" loading="lazy" width="60" height="60" class="mb-10 z-20 relative left-3"
+                                    src="images/carbon_network-2.svg" />
+                                <div
+                                    class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                </div>
+                                <p class="text-xl relative z-20 capitalize">Partner with top brands </p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                            <div class="imageIcons relative">
+                                <img alt="Icon" loading="lazy" width="60" height="60" class="mb-10 z-20 relative left-3"
+                                    src="images/iconoir_network.svg" />
+                                <div
+                                    class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                </div>
+                                <p class="text-xl relative z-20 capitalize">Exclusive offers and Promos </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center sm:justify-end sm:-mr-6 flex-wrap">
+                        <div
+                            class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                            <div class="imageIcons relative"><img alt="Icon" loading="lazy" width="60" height="60"
+                                    class="mb-10 z-20 relative left-3" src="images/iconoir_network.svg" />
+                                <div
+                                    class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                </div>
+                                <p class="text-lg relative z-20 capitalize">Reliable and Accurate Tracking </p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                            <div class="imageIcons relative"><img alt="Icon" loading="lazy" width="60" height="60"
+                                    class="mb-10 z-20 relative left-3" src="images/carbon_network-2.svg" />
+                                <div
+                                    class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                </div>
+                                <p class="text-lg relative z-20 capitalize">Analytics to Monetize your Traffic </p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                            <div class="imageIcons relative"><img alt="Icon" loading="lazy" width="60" height="60"
+                                    class="mb-10 z-20 relative left-3" src="images/iconoir_network.svg" />
+                                <div
+                                    class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                </div>
+                                <p class="text-lg relative z-20 capitalize">Generous Commission and Timely payouts </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block sm:hidden my-2 sm:my-16 mx-0 py-5 pt-3 sm:mx-5 publisher-slider">
+                    <div class="slick-slider">
+                        <div class="slick-list">
+                            <div
+                                class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                                <div class="imageIcons relative">
+                                    <img alt="Icon" loading="lazy" width="60" height="60"
+                                        class="mb-10 z-20 relative left-3" src="images/iconoir_network.svg" />
+                                    <div
+                                        class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                    </div>
+                                    <p class="text-xl relative z-20 capitalize">Wide Selection of Campaigns </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                                <div class="imageIcons relative">
+                                    <img alt="Icon" loading="lazy" width="60" height="60"
+                                        class="mb-10 z-20 relative left-3" src="images/carbon_network-2.svg" />
+                                    <div
+                                        class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                    </div>
+                                    <p class="text-xl relative z-20 capitalize">Partner with top brands </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                                <div class="imageIcons relative">
+                                    <img alt="Icon" loading="lazy" width="60" height="60"
+                                        class="mb-10 z-20 relative left-3" src="images/iconoir_network.svg" />
+                                    <div
+                                        class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                    </div>
+                                    <p class="text-xl relative z-20 capitalize">Exclusive offers and Promos </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                                <div class="imageIcons relative"><img alt="Icon" loading="lazy" width="60" height="60"
+                                        class="mb-10 z-20 relative left-3" src="images/iconoir_network.svg" />
+                                    <div
+                                        class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                    </div>
+                                    <p class="text-lg relative z-20 capitalize">Reliable and Accurate Tracking </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                                <div class="imageIcons relative"><img alt="Icon" loading="lazy" width="60" height="60"
+                                        class="mb-10 z-20 relative left-3" src="images/carbon_network-2.svg" />
+                                    <div
+                                        class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                    </div>
+                                    <p class="text-lg relative z-20 capitalize">Analytics to Monetize your Traffic </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#ffffff] w-full h-[240px] sm:w-[270px] sm:h-[220px] rounded-3xl p-8 my-4 mx-5 relative serviceCard overflow-hidden hover:text-white">
+                                <div class="imageIcons relative"><img alt="Icon" loading="lazy" width="60" height="60"
+                                        class="mb-10 z-20 relative left-3" src="images/iconoir_network.svg" />
+                                    <div
+                                        class="bgCircle w-[85px] h-[85px] bg-[#ffd6ae] rounded-full opacity-50 absolute -top-3 left-0 z-10 scaleInCenter scaleDownCenter">
+                                    </div>
+                                    <p class="text-lg relative z-20 capitalize">Generous Commission and Timely payouts
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:bg-transparent bg-[#FFF8F1] pb-10 sm:pb-0">
+                <div class="flex items-center bg-[#fff]">
+                    <div
+                        class="w-[620px] h-[130px] sm:h-[160px] flex items-center justify-center rounded-tr-[30px] rounded-br-[30px] p-4 bg-[#311C17]">
+                        <p
+                            class="font-gilroy text-[17px] sm:text-4xl text-white font-extrabold leading-[21px] sm:leading-10 text-center flex items-center justify-center mb-3 opacity-50">
+                            Our Publishers</p>
+                    </div>
+                    <div class="imageslide-container items-center">
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-0" loading="lazy" width="250" height="130" src="images/axis-bank.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-1" loading="lazy" width="250" height="130" src="images/cashkaro.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-2" loading="lazy" width="250" height="130"
+                                src="images/coupondunia-logo.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-3" loading="lazy" width="250" height="130" src="images/couponzguru.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-4" loading="lazy" width="250" height="130" src="images/desidime.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-5" loading="lazy" width="250" height="130" src="images/drim.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-6" loading="lazy" width="250" height="130" src="images/FamPay_Logo.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-7" loading="lazy" width="250" height="130" src="images/freekamaal.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-8" loading="lazy" width="250" height="130" src="images/gopaisa.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-9" loading="lazy" width="250" height="130" src="images/Gyftr.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-10" loading="lazy" width="250" height="130" src="images/ndtv.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-11" loading="lazy" width="250" height="130" src="images/oneindia.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-12" loading="lazy" width="250" height="130" src="images/paisawapas.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-13" loading="lazy" width="250" height="130" src="images/payback.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-14" loading="lazy" width="250" height="130" src="images/unidays.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-15" loading="lazy" width="250" height="130" src="images/zinzoy.png" />
+                        </div>
+                        <div class="mx-2 w-[215px]  mr-2 imageSlide">
+                            <img alt="logo-16" loading="lazy" width="250" height="130" src="images/zyzillion.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <section class="relative h-[220px] sm:h-[200px]"
+            style="background-image:url(images/bgImage.png);background-size:cover;background-position:center">
+            <div
+                class="flex items-center justify-center flex-col md:flex-row sm:flex-row absolute top-0 z-20 w-full h-full">
+                <div class="flex items-center justify-evenly w-full sm:w-1/2 h-full ">
+                    <img alt="Icon" loading="lazy" width="90" height="90"
+                        class="w-[50px] h-[50px] sm:w-[90px] sm:h-[90px]" src="images/Frame.png" />
+                    <div class="flex items-center justify-center flex-col px-1 sm:px-10 capitalize">
+                        <p class="font-light text-sm  sm:text-2xl py-2 text-white">Earn Generous Commissions by becoming
+                        </p>
+                        <p class="text-2xl sm:text-5xl font-extrabold leading-14 text-white tracking-tight text-left">
+                            part of our network</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-full sm:w-1/2 h-full px-1 sm:px-10">
+                    <a target="_blank" href="/login.html">
+                        <button class="uppercase mt-1 sm:mt-5 text-sm sm:text-lg font-medium bg-white text-orange-600 border border-orange-600 rounded-full px-8 py-3 mr-2 w-[100px] sm:w-[160px] orange-btn relative z-40">Login
+                            <span class="bg"></span>
+                        </button>
+                    </a>
+                    <a target="_blank" href="/register.html">
+                        <button class="uppercase mt-1 sm:mt-5 text-sm sm:text-lg font-medium bg-white text-orange-600 border border-orange-600 rounded-full px-8 py-3 orange-btn relative z-40">Register
+                            as a publisher
+                            <span class="bg"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Section Part Html End -->
+
+
+
+
+        <!-- Footer Part Html Start -->
+        <footer class="w-100 bg-[#FFF8F1] text-black py-2 px-3 md:p-12 sm:p-12 sm:py-8">
+            <div class="container mx-auto flex flex-col sm:flex-row justify-between m-10 mb-0">
+                <div class="flex items-start justify-center sm:justify-start flex-col  border-b sm:border-b-0">
+                    <a class="w-[260px] h-[80px] mr-2" href="index.html">
+                        <img alt="logo" loading="lazy" width="250" height="70" src="images/footerLogo.png">
+                    </a>
+                    <p class="pt-10 pl-0  font-mulish font-bold">Shoogloo Network Private Limited</p>
+                    <p class="pt-2 pl-0  font-mulish text-[14px] font-bold">Address:</p>
+                    <p class="pt-2 pl-0  font-mulish text-[14px] tracking-normal">UNIT 461 – 463, 4th Floor,</p>
+                    <p class="pt-1 pl-0  font-mulish text-[14px] tracking-normal">JMD Megapolis, Sector 48,</p>
+                    <p class="pt-1 pl-0  font-mulish text-[14px]  tracking-normal"> Gurgaon, Haryana – 122001, India 
+                    </p>
+                </div>
+                <div class="flex items-start justify-between">
+                    <div class="pt-2">
+                        <h3
+                            class="mb-2 text-black font-mulish  text-[16px] sm:text-lg capitalize font-medium leading-normal tracking-tight">
+                            Newsletter</h3>
+                        <p
+                            class="text-black font-gilroy  text-[28px] sm:text-4xl font-light leading-normal capitalize py-1 sm:py-4">
+                            Stay up to date</p>
+                        <div class="flex items-center flex-col relative">
+                            <div class="flex items-center border-b border-black py-3">
+                                <div class="mr-2"><svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5" clip-path="url(#clip0_124_3384)">
+                                            <path
+                                                d="M14.3689 2.96367C14.3084 2.95742 14.2473 2.95742 14.1867 2.96367H1.74227C1.66251 2.9649 1.58328 2.97685 1.50671 2.99922L7.92894 9.39478L14.3689 2.96367Z"
+                                                fill="black"></path>
+                                            <path
+                                                d="M15.0267 3.58154L8.55557 10.026C8.38902 10.1915 8.16373 10.2845 7.9289 10.2845C7.69407 10.2845 7.46878 10.1915 7.30223 10.026L0.888899 3.63043C0.869183 3.70289 0.85873 3.77756 0.857788 3.85265V12.7415C0.857788 12.9773 0.951439 13.2034 1.11814 13.3701C1.28484 13.5368 1.51093 13.6304 1.74668 13.6304H14.1911C14.4269 13.6304 14.653 13.5368 14.8197 13.3701C14.9864 13.2034 15.08 12.9773 15.08 12.7415V3.85265C15.0765 3.76006 15.0585 3.66858 15.0267 3.58154ZM2.35557 12.7415H1.73779V12.106L4.9689 8.90154L5.59557 9.52821L2.35557 12.7415ZM14.1822 12.7415H13.56L10.32 9.52821L10.9467 8.90154L14.1778 12.106L14.1822 12.7415Z"
+                                                fill="black"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_124_3384">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0 0.297119)"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <div class="ml-2 bg-[#FFF8F1]"><input type="email" id="email"
+                                        class="w-[300px] bg-[#FFF8F1] focus:outline-none outline-none text-sm font-medium"
+                                        placeholder="Enter Email Address" name="email" value=""></div>
+                            </div>
+                        </div>
+                        <div class="w-[175px] mt-10"><button
+                                class="flex items-center justify-center border-orange-600 rounded-full w-[175px] text-white text-[20px] leading-[normal] tracking-normal p-2 orange-btn z-50 cursor-pointer"><span
+                                    class="text-lg mt-1 font-semibold uppercase">Subscribe</span><span
+                                    class="bg"></span></button></div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between">
+                    <div class="pt-2 mb-4">
+                        <h3
+                            class="mb-2 text-black font-mulish text-lg capitalize font-medium leading-normal tracking-tight">
+                            Quick Links</h3>
+                        <ul class="text-sm pt-2">
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="about.html">About us</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="advertisers.html">Advertisers</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="publishers.html">Publishers</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="/login.html">Publisher Login</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="contact.html">Contact us</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="cookies-policy.html">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto flex justify-center">
+                <div class="flex items-center justify-center w-full  md:w-1/4">
+                    <p class="text-black font-mulish text-sm font-normal leading-normal opacity-40 mt-10">© 2024
+                        Shoogloo.com</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Part Html End -->
+    </main>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Our Script JS -->
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slick-list').slick({
+                dots: false,           // Show navigation dots
+                infinite: true,       // Infinite loop sliding
+                speed: 300,           // Transition speed
+                slidesToShow: 1,      // Number of slides to show
+                slidesToScroll: 1,    // Number of slides to scroll
+                autoplay: false,       // Autoplay enabled
+                autoplaySpeed: 5000,  // Autoplay speed (2 seconds)
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

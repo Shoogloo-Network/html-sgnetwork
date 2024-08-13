@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shoogloo-Network</title>
+    <!-- Fevicon Icon CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <main class="min-h-screen flex-col items-center justify-center">
+        <!-- Header Part Html Start -->
+        <header
+            class="fixed top-0 left-0 right-0 text-white px-2 sm:p-4 flex justify-between items-center z-[100] sm:h-[90px] h-[65px] transition-all duration-300 ease-in-out">
+            <div class="flex items-center z-[100]">
+                <a class="sm:w-[280px] w-[200px] sm:h-[80px] h-[50px] mr-2" href="index.html">
+                    <img alt="logo" loading="lazy" width="260" height="70"
+                        class="sm:w-[280px] sm:h-[90px] w-[180px] h-[55px]" src="images/headerLogob52e.png">
+                </a>
+            </div>
+            <div class="z-[100] flex items-center justify-between">
+                <a class="mbtn-hide text-center rounded-full w-[80px] sm:w-[130px] sm:text-[20px] leading-[normal] tracking-normal py-2 sm:p-2 z-50 cursor-pointer orange-btn text-sm sm:text-lg uppercase  border-orange-600 hidden sm:block"
+                    href="/login.html">
+                    <span class="font-semibold uppercase">Login</span>
+                    <span class="bg"></span>
+                </a>
+                <a class="mbtn-hide text-center rounded-full w-[90px] sm:w-[130px] sm:text-[20px] leading-[normal] tracking-normal py-2 sm:p-2 z-50 cursor-pointer orange-btn text-sm sm:text-lg uppercase border-orange-600 sm:mx-10 mx-2 sm:mr-12 hidden sm:block"
+                    href="/register.html">
+                    <span class="font-semibold uppercase">Register</span>
+                    <span class="bg"></span>
+                </a>
+                <button
+                    class="btn-menu text-white focus:outline-none flex items-center justify-center focus:text-white border-opacity-50 border-orange-300">
+                    <div
+                        class="navigation w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] bg-[#342929] bg-opacity-20 rounded-full flex items-center justify-center border border-opacity-30 border-white">
+                        <svg class="first-icon block" width="34" height="27" viewBox="0 0 34 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 1">
+                                <rect id="Rectangle 2" x="0.625977" y="11.75" width="33.0944" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 3" x="0.625977" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 5" x="0.625977" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 4" x="18.0693" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 6" x="18.0693" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                            </g>
+                        </svg>
+                        <svg class="second-icon hidden" width="34" height="27" viewBox="0 0 34 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 1">
+                                <rect id="Rectangle 2" x="0.625977" y="11.75" width="33.0944" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 3" x="0.625977" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                                <rect id="Rectangle 5" x="0.625977" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="transparent"></rect>
+                                <rect id="Rectangle 4" x="18.0693" y="0.103516" width="15.6513" height="5.12287"
+                                    fill="transparent"></rect>
+                                <rect id="Rectangle 6" x="18.0693" y="22.6509" width="15.6513" height="5.12287"
+                                    fill="#D9D9D9"></rect>
+                            </g>
+                        </svg>
+                        <img alt="logo" loading="lazy" class="menu-btnminus" src="images/minus.png"
+                            style="color: transparent;">
+                    </div>
+                </button>
+            </div>
+            <nav class="menu menu-custbtn fadeInRight p-10 pl-7 self-center text-white fixed top-0 left-0 w-full min-h-screen bg-[#211515] items-center justify-center z-[50] sm:block hidden">
+                <div class="relative p-10 pl-7 top-5 sm:-top-4 self-center z-10 text-white fadeInLeft2">
+                    <ul class="flex flex-col items-center space-y-4">
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/login.html"> LogIn </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/register.html"> Register </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/publishers.html"> Publishers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/advertisers.html"> Advertisers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/contact.html"> Contact Us </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/about.html"> About Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="menu2 menu-custbtn fadeInRight2 p-10 pl-7 self-center text-white fixed top-0 left-0 w-full min-h-screen bg-[#211515] items-center justify-center z-[50] sm-hidden block">
+                <div class="relative p-10 pl-7 top-5 sm:-top-4 self-center z-10 text-white fadeInLeft2">
+                    <ul class="flex flex-col items-center space-y-4">
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/login.html"> LogIn </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/register.html"> Register </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/publishers.html"> Publishers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/advertisers.html"> Advertisers </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/contact.html"> Contact Us </a>
+                        </li>
+                        <li>
+                            <a class="font-Gilroy text-3xl sm:text-4xl font-extrabold leading-[3.5rem] sm:leading-loose opacity-50 hover:opacity-100"
+                                href="/about.html"> About Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="relative mt-16 sm:mt-0">
+            <img alt="image" loading="lazy" width="1200" height="800" class="w-full h-auto object-cover sm:block hidden"
+                style="color:transparent;width:100%;height:auto" sizes="100vw" src="images/homebanner.webp">
+            <img alt="mobileimage" loading="lazy" width="1200" height="800"
+                class="w-full h-auto sm:h-[100vh] object-cover sm:hidden block"
+                style="color:transparent;width:100%;height:auto" sizes="100vw" src="images/homebannermob.webp">
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="w-100 bg-[#FFF8F1] text-black p-2 sm:p-8 sm:pb-2 pt-5 relative">
+            <img alt="" loading="lazy" class="absolute w-1/2 top-0" src="images/Services.webp">
+            <div class="sm:block hidden">
+                <p class="font-extralight text-[28px] sm:text-5xl leading-[39px] text-center mb-3 capitalize">We Aspire
+                    to be our Advertisers Long Term Partner</p>
+                <p class="font-extrabold text-[28px] sm:text-4xl leading-[39px] text-center hidden">The HighTest Quality
+                    Services</p>
+            </div>
+            <div class="sm:hidden block">
+                <p class="font-extralight text-[28px] sm:text-5xl leading-[39px] text-center mb-3 capitalize">
+                    We Aspire to be our Advertisers Long Term Partner
+                    <span class="font-extrabold text-[28px] sm:text-4xl leading-[39px] text-center hidden"> The HighTest
+                        Quality Services</span>
+                </p>
+            </div>
+            <div class="hidden sm:flex justify-around my-2 sm:my-2 mx-0 sm:mx-5 ">
+                <div class="w-[50%] sm:w-1/5  inline-block mt-0 sm:mt-0">
+                    <div class="relative animation-img-container">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="m-w-full transition-transform duration-300 purple-img relative"
+                            src="images/Services_purple1ecd.png">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                            src="images/Services_1.png">
+                    </div>
+                    <p class="text-center mt-4 font-normal services-font capitalize">Experienced team Delivering
+                        Performance&nbsp;</p>
+                </div>
+                <div class="w-[50%] sm:w-1/5 inline-block  mt-0 sm:mt-20">
+                    <div class="relative animation-img-container">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="hover: transition-transform duration-300 purple-img relative"
+                            src="images/Services_purple1ecd.png">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                            src="images/Services_2.png">
+                    </div>
+                    <p class="text-center mt-4 font-normal services-font capitalize">Trusted by Brands globally&nbsp;
+                    </p>
+                </div>
+                <div class="w-[50%] sm:w-1/5  inline-block  mt-0 sm:mt-0">
+                    <div class="relative animation-img-container">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="hover: transition-transform duration-300 purple-img relative"
+                            src="images/Services_purple1ecd.png">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                            src="images/Services_3.png">
+                    </div>
+                    <p class="text-center mt-4 font-normal services-font capitalize">Dedicated Account management team
+                        appointed&nbsp;</p>
+                </div>
+                <div class="w-[50%] sm:w-1/5 inline-block  mt-0 sm:mt-20">
+                    <div class="relative animation-img-container">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="hover: transition-transform duration-300 purple-img relative"
+                            src="images/Services_purple1ecd.png">
+                        <img alt="" loading="lazy" width="300" height="100"
+                            class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                            src="images/Services_4.png">
+                    </div>
+                    <p class="text-center mt-4 font-normal services-font capitalize">Consultative and Strategic Approach
+                        in Planning and execution&nbsp;</p>
+                </div>
+            </div>
+            <div class="block sm:hidden justify-around my-2 sm:my-2 mx-0 sm:mx-5 service-slider">
+                <!-- Slick Slider HTML will go here START -->
+                <div class="slick-slider">
+                    <div class="slick-list">
+                        <div class="w-[50%] sm:w-1/5  inline-block mt-0 sm:mt-0">
+                            <div class="relative animation-img-container">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="m-w-full transition-transform duration-300 purple-img relative"
+                                    src="images/Services_purple1ecd.png">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                                    src="images/Services_1.png">
+                            </div>
+                            <p class="text-center mt-4 font-normal services-font capitalize">Experienced team Delivering
+                                Performance&nbsp;</p>
+                        </div>
+                        <div class="w-[50%] sm:w-1/5 inline-block  mt-0 sm:mt-20">
+                            <div class="relative animation-img-container">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="hover: transition-transform duration-300 purple-img relative"
+                                    src="images/Services_purple1ecd.png">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                                    src="images/Services_2.png">
+                            </div>
+                            <p class="text-center mt-4 font-normal services-font capitalize">Trusted by Brands
+                                globally&nbsp;
+                            </p>
+                        </div>
+                        <div class="w-[50%] sm:w-1/5  inline-block  mt-0 sm:mt-0">
+                            <div class="relative animation-img-container">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="hover: transition-transform duration-300 purple-img relative"
+                                    src="images/Services_purple1ecd.png">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                                    src="images/Services_3.png">
+                            </div>
+                            <p class="text-center mt-4 font-normal services-font capitalize">Dedicated Account
+                                management team
+                                appointed&nbsp;</p>
+                        </div>
+                        <div class="w-[50%] sm:w-1/5 inline-block  mt-0 sm:mt-20">
+                            <div class="relative animation-img-container">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="hover: transition-transform duration-300 purple-img relative"
+                                    src="images/Services_purple1ecd.png">
+                                <img alt="" loading="lazy" width="300" height="100"
+                                    class="transition-transform duration-300 animated-img absolute service_img top-10 w-70 left-10"
+                                    src="images/Services_4.png">
+                            </div>
+                            <p class="text-center mt-4 font-normal services-font capitalize">Consultative and Strategic
+                                Approach
+                                in Planning and execution&nbsp;</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Slick Slider HTML will go here END -->
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="p-2 sm:p-8 overflow-hidden">
+            <p class="font-extralight mb-3 py-2 sm:py-0 sm:pb-5 text-[28px] sm:text-5xl leading-[39px] text-center">Your
+                Extended team for Complete Management</p>
+            <div class="flex justify-center align-center">
+                <div class="relative p-10 self-center z-50 sm:block hidden mr-5 fadeInLeft">
+                    <img alt="" loading="lazy" width="325" height="359" src="images/lorem_1.jpg" />
+                    <img alt="" loading="lazy" width="74" height="68" class="absolute bottom-25 left-[-2.625rem]"
+                        src="images/left_svg.svg" />
+                </div>
+                <div class="relative sm:block hidden ml-5 fadeInRight">
+                    <img alt="" loading="lazy" width="430" height="400" src="images/lorem_2.jpg" />
+                    <img alt="" loading="lazy" width="100" height="100"
+                        class="absolute top-[-1.625rem] right-[-2.375rem] w-1/5" src="images/right_svg.svg" />
+                </div>
+                <div class="relative p-2  self-center z-50 sm:hidden block fadeInLeft">
+                    <img alt="" loading="lazy" width="325" height="359" src="images/lorem_1.jpg" />
+                    <img alt="" loading="lazy" width="74" height="68"
+                        class="absolute bottom-[-75px] left-[1.625rem] sm:left-[-2.625rem]" src="images/left_svg.svg" />
+                </div>
+                <div class="relative sm:hidden block fadeInRight">
+                    <img alt="" loading="lazy" width="430" height="400" src="images/lorem_2.jpg" />
+                    <img alt="" loading="lazy" width="100" height="100"
+                        class="absolute top-[-0.75rem] right-[-1rem] w-1/5" src="images/right_svg.svg" />
+                </div>
+            </div>
+            <div
+                class=" block overflow-hidden sm:overflow-hidden w-full  sm:w-[95%] m-auto  sm:flex justify-unset sm:justify-around pt-12 py-0 sm:py-5 text-lg fadeInUp">
+                <div
+                    class="relative  flex item-center justify-start sm:justify-center mb-0 sm:mb-[30px] border-b-2 py-3 sm:py-0 border[#ECECEC] sm:border-0  w-full  items-center sm:w-1/4 sm:whitespace-normal whitespace-normal">
+                    <img alt="" loading="lazy" width="30" height="30" class="h-[62px]" src="images/1.png" /><button
+                        class="px-2 text-[16px] text-left capitalize">Experienced leadership team </button>
+                </div>
+                <div
+                    class="relative flex item-center  justify-start sm:justify-center  mb-0 sm:mb-[30px] border-b-2 py-3 sm:py-0  border[#ECECEC] sm:border-0  w-full items-center sm:w-1/4 sm:whitespace-normal whitespace-normal">
+                    <img alt="" loading="lazy" width="30" height="30" class="h-[62px]" src="images/2.png" />
+                    <button class="px-2 text-[16px] text-left capitalize">20+ years of experience in building affiliate
+                        network </button>
+                </div>
+                <div
+                    class="relative flex item-center  justify-start sm:justify-center  mb-0 sm:mb-[30px] border-b-2 py-3 sm:py-0  border[#ECECEC] sm:border-0  w-full  items-center sm:w-1/4 sm:whitespace-normal whitespace-normal">
+                    <img alt="" loading="lazy" width="30" height="30" class="h-[62px]" src="images/3.png" />
+                    <button class="px-2 text-[16px] text-left capitalize">Daily new inventory getting added </button>
+                </div>
+                <div
+                    class="relative flex item-center  justify-start sm:justify-center  mb-0 sm:mb-[30px] border-b-2 py-3 sm:py-0  border[#ECECEC] sm:border-0  w-full  items-center sm:w-1/4 sm:whitespace-normal whitespace-normal">
+                    <img alt="" loading="lazy" width="30" height="30" class="h-[62px]" src="images/4.png" />
+                    <button class="px-2 text-[16px] text-left">Detailed MIS tool for reporting and Analytics </button>
+                </div>
+            </div>
+            <div
+                class="self-center flex justify-center py-3 mb-0 sm:mb-[0px] whitespace-normal   sm:ml-auto sm:mr-auto  ml-[10%] mr-[10%]  border-unset sm:border-b sm:border-slate-300">
+                <a href="contact.html">
+                    <button class="inline-flex items-center text-[#FD8624] pt-3  text-[16px] ">Get started by
+                        Registering as an Advertiser with us<svg xmlns="http://www.w3.org/2000/svg" width="33"
+                            height="16" viewBox="0 0 33 16" fill="none" class="ml-2">
+                            <path
+                                d="M32.1685 8.49861C32.559 8.10809 32.559 7.47492 32.1685 7.0844L25.8045 0.720436C25.414 0.329912 24.7808 0.329912 24.3903 0.720436C23.9998 1.11096 23.9998 1.74413 24.3903 2.13465L30.0472 7.7915L24.3903 13.4484C23.9998 13.8389 23.9998 14.472 24.3903 14.8626C24.7808 15.2531 25.414 15.2531 25.8045 14.8626L32.1685 8.49861ZM0.842781 8.7915H31.4614V6.7915H0.842781V8.7915Z"
+                                fill="#FD8624"></path>
+                        </svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="bg-[#211515] text-white pb-16 pt-5 overflow-x-hidden">
+            <h2 class="text-5xl font-extralight text-center p-10 pb-14 sm:block hidden fadeInRight">All Eyes On the
+                <span class="font-bold">Numbers</span>
+            </h2>
+            <div class="sm:flex justify-around mx-16  hidden fadeInLeft">
+                <div class="flex flex-col justify-center items-center border-r border-gray-600 w-1/3">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[13%]"
+                        src="images/products-icon.gif" />
+                    <p class="font-bold text-3xl py-2">5000+</p>
+                    <p class="text-orange-400 text-lg">Products</p>
+                </div>
+                <div class="flex flex-col justify-center items-center border-r border-gray-600 w-1/3">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[13%]"
+                        src="images/Delivered-icon.gif" />
+                    <p class="font-bold text-3xl py-2">6M+</p>
+                    <p class="text-orange-400 text-lg">Orders in 2022</p>
+                </div>
+                <div class="flex flex-col justify-center items-center border-r border-gray-600 w-1/3">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[13%]"
+                        src="images/Advertiser-icon.gif" />
+                    <p class="font-bold text-3xl py-2">300+</p>
+                    <p class="text-orange-400 text-lg">Advertisers and campaigns live</p>
+                </div>
+                <div class="flex flex-col justify-center items-center w-1/3">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[13%]"
+                        src="images/deliveredproducts-icon.gif" />
+                    <p class="font-bold text-3xl py-2">INR 13B</p>
+                    <p class="text-orange-400 text-lg">GMV Delivered</p>
+                </div>
+            </div>
+            <h2
+                class="text-[28px] leading-[39px] font-extralight text-center p-5 pb-5 sm:pb-14 sm:hidden block fadeInRight">
+                All Eyes On the <span class="font-bold">Numbers</span></h2>
+            <div class="sm:hidden justify-around mx-5 sm:mx-16 block fadeInLeft">
+                <div
+                    class="inline-flex flex-col float-left justify-center items-center border-b border-r border-gray-600 py-3 w-1/2">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[52px] h-[52px] sm:w-[13%] sm:h-[auto]"
+                        src="images/products-icon.gif" />
+                    <p class="font-bold text-[32px] sm:text-3xl py-2">5000+</p>
+                    <p class="text-orange-400 text-[14px] sm:text-lg  text-center">Products</p>
+                </div>
+                <div
+                    class="inline-flex flex-col float-left justify-center items-center border-b border-gray-600  py-3 w-1/2">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[52px] h-[52px] sm:w-[13%] sm:h-[auto]"
+                        src="images/Delivered-icon.gif" />
+                    <p class="font-bold text-[32px] sm:text-3xl py-2">6M+</p>
+                    <p class="text-orange-400  text-[14px] sm:text-lg  text-center">Orders in 2022</p>
+                </div>
+                <div
+                    class="inline-flex flex-col float-left justify-center items-center border-r border-gray-600 py-3 w-1/2">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[52px] h-[52px] sm:w-[13%] sm:h-[auto]"
+                        src="images/Advertiser-icon.gif" />
+                    <p class="font-bold text-[32px] sm:text-3xl py-2">300+</p>
+                    <p class="text-orange-400  text-[14px] sm:text-lg text-center">Advertisers and campaigns live</p>
+                </div>
+                <div class="inline-flex flex-col float-left justify-center items-center py-3 w-1/2">
+                    <img alt="" loading="lazy" width="300" height="100" class="w-[52px] h-[52px] sm:w-[13%] sm:h-[auto]"
+                        src="images/deliveredproducts-icon.gif" />
+                    <p class="font-bold text-[32px] sm:text-3xl py-2">INR 13B</p>
+                    <p class="text-orange-400  text-[14px] sm:text-lg  text-center">GMV Delivered</p>
+                </div>
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="block sm:flex relative justify-between items-center p-2 sm:p-20 pb-10 overflow-x-hidden border-b m-2 sm:m-10 sm:mt-0 mb-0">
+            <img alt="" loading="lazy" width="100" height="100"
+                class="absolute top-0 sm:top-10 left-[-20px] sm:left-auto" src="images/advertiser.png" />
+            <div class="w-full sm:w-1/2 leading-7">
+                <h2
+                    class="text-[28px] sm:text-5xl font-light w-full sm:w-3/4 mb-3 leading-[4rem] sm:leading-[4rem] min-h-20 sm:min-h-32">
+                    Solutions for <br />
+                    <span id="advertisers" class="font-extrabold inline-block"></span>
+                </h2>
+                <div class="fadeInLeft">
+                    <p class="pr-0 sm:pr-28 font-light text-[14px] sm:text-auto leading-[26px] sm:leading-auto">Your
+                        Preferable Partner for Profitable Partnership<br />Trusted Globally
+                    </p>
+                    <a href="contact.html">
+                        <button
+                            class="uppercase mt-5 text-lg font-medium bg-transparent text-orange-600 border border-orange-600 rounded-full px-8 py-3 orange-btn">Contact
+                            us<span class="bg"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2">
+                <ul class="solution-list list-inside ps-5 sm-block hidden fadeInRight">
+                    <li class="py-3 pb-5 text-lg border-b">Smooth Campaign Setup</li>
+                    <li class="py-3 pb-5 text-lg border-b">Increase sales and ROI by 20%</li>
+                    <li class="py-3 pb-5 text-lg border-b">Access to varied Traffic sources</li>
+                    <li class="py-3 pb-5 text-lg border-b">Expand Audience Reach</li>
+                    <li class="py-3 pb-5 text-lg border-b">Detailed Analytics and Insights</li>
+                    <li class="py-3 pb-5 text-lg border-b">Complete Transparency</li>
+                </ul>
+                <ul class="solution-list list-inside ps-0 sm:ps-5 sm-hidden block fadeInRight">
+                    <li class="py-3 pb-5 text-lg border-b">Smooth Campaign Setup</li>
+                    <li class="py-3 pb-5 text-lg border-b">Increase sales and ROI by 20%</li>
+                    <li class="py-3 pb-5 text-lg border-b">Access to varied Traffic sources </li>
+                    <li class="py-3 pb-5 text-lg border-b">Expand Audience Reach</li>
+                    <li class="py-3 pb-5 text-lg border-b">Detailed Analytics and Insights</li>
+                    <li class="py-3 pb-5 text-lg border-b">Complete Transparency</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="flex items-center">
+            <div
+                class="w-[680px] h-[130px] sm:h-[160px] flex items-center justify-center rounded-tr-[30px] rounded-br-[30px] p-4 bg-[#311C17]">
+                <p
+                    class="font-gilroy text-[17px] sm:text-4xl text-white font-extrabold leading-[21px] sm:leading-10 text-center flex items-center justify-center mb-3 opacity-50">
+                    Our Advertisers</p>
+            </div>
+            <div class="imageslide-container items-center">
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-0" loading="lazy" width="250" height="130" src="images/addidas.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-1" loading="lazy" width="250" height="130" src="images/Flipkart.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-2" loading="lazy" width="250" height="130" src="images/Levis.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-3" loading="lazy" width="250" height="130" src="images/M-S.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-4" loading="lazy" width="250" height="130" src="images/Myntra.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-5" loading="lazy" width="250" height="130" src="images/peppefry.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-6" loading="lazy" width="250" height="130" src="images/puma.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-7" loading="lazy" width="250" height="130" src="images/wildcraft.jpg" />
+                </div>
+                <div class="mx-2  w-[215px] mr-2 bg-[#211515] imageSlide">
+                    <img alt="logo-8" loading="lazy" width="250" height="130" src="images/addidas.jpg" />
+                </div>
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="relative block sm:flex  justify-between items-center p-4 sm:p-16 pb-10 overflow-x-hidden m-0 sm:m-10 mb-0 bg-[#FFF8F1] sm:bg-[#fff]">
+            <img alt="" loading="lazy" width="106" height="73" class="absolute top-2 sm:top-0 left-[-20px] sm:left-auto"
+                src="images/publisher.png" />
+            <div class="w-full sm:w-1/2 sm:leading-7">
+                <h2
+                    class="text-[28px] sm:text-5xl font-light w-3/4 mb-3 leading-[4rem] sm:leading-[4rem] min-h-20 sm:min-h-32">
+                    Solutions for <br />
+                    <span id="publishers" class="font-extrabold inline-block"></span>
+                </h2>
+                <div class="fadeInLeft">
+                    <p class="pr-0 sm:pr-28 font-light  text-[14px] sm:text-auto leading-[26px] sm:leading-auto">
+                        Collaborate with renowned international brands through exclusive campaigns and enjoy substantial
+                        commissions</p>
+                    <div class="relative z-50">
+                        <a target="_blank" href="/login.html">
+                            <button
+                                class="uppercase mt-5 text-[18px] sm:text-lg font-[700] sm:font-medium bg-[#fff] bg-transparent text-orange-600 border border-orange-600 rounded-full px-8 py-3 mr-2 orange-btn">Login<span
+                                    class="bg"></span>
+                            </button>
+                        </a>
+                        <a target="_blank" href="/register.html">
+                            <button
+                                class="uppercase mt-5 text-[18px] sm:text-lg font-[700] sm:font-medium bg-[#fff] bg-transparent text-orange-600 border border-orange-600 rounded-full px-8 py-3 orange-btn">Register
+                                as a publisher<span class="bg"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2">
+                <ul class="solution-list list-inside ps-5 sm:block hidden fadeInRight">
+                    <li class="py-3 pb-5 text-lg border-b">Wide Selection of Campaigns</li>
+                    <li class="py-3 pb-5 text-lg border-b">Partner with top brands</li>
+                    <li class="py-3 pb-5 text-lg border-b">Exclusive offers and Promos </li>
+                    <li class="py-3 pb-5 text-lg border-b">Reliable and Accurate Tracking</li>
+                    <li class="py-3 pb-5 text-lg border-b">Analytics to Monetize your Traffic</li>
+                    <li class="py-3 pb-5 text-lg border-b">Generous Commission and Timely payouts</li>
+                </ul>
+                <ul class="solution-list list-inside ps-0 sm:ps-5 sm:hidden block fadeInRight">
+                    <li class="py-3 pb-5 text-lg border-b">Wide Selection of Campaigns</li>
+                    <li class="py-3 pb-5 text-lg border-b">Partner with top brands</li>
+                    <li class="py-3 pb-5 text-lg border-b">Exclusive offers and Promos</li>
+                    <li class="py-3 pb-5 text-lg border-b">Reliable and Accurate Tracking</li>
+                    <li class="py-3 pb-5 text-lg border-b">Analytics to Monetize your Traffic</li>
+                    <li class="py-3 pb-5 text-lg border-b">Generous Commission and Timely payouts</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="sm:bg-transparent bg-[#FFF8F1] pb-10 sm:pb-0">
+            <div class="flex items-center bg-[#fff]">
+                <div
+                    class="w-[30%] sm:w-[25%] h-[130px] sm:h-[160px] flex items-center justify-center rounded-tr-[30px] rounded-br-[30px] p-4 pl-3 bg-[#311C17]">
+                    <p
+                        class="font-gilroy text-[17px] sm:text-4xl text-white font-extrabold leading-[21px] sm:leading-10 text-center inline-flex items-center justify-center mb-3 opacity-50">
+                        Our Publishers</p>
+                </div>
+                <div class="imageslide-container items-center w-[70%]">
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-0" loading="lazy" width="250" height="130" src="images/axis-bank.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-1" loading="lazy" width="250" height="130" src="images/cashkaro.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-2" loading="lazy" width="250" height="130" src="images/coupondunia-logo.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-3" loading="lazy" width="250" height="130" src="images/couponzguru.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-4" loading="lazy" width="250" height="130" src="images/desidime.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-5" loading="lazy" width="250" height="130" src="images/drim.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-6" loading="lazy" width="250" height="130" src="images/FamPay_Logo.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-7" loading="lazy" width="250" height="130" src="images/freekamaal.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-8" loading="lazy" width="250" height="130" src="images/gopaisa.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-9" loading="lazy" width="250" height="130" src="images/Gyftr.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-10" loading="lazy" width="250" height="130" src="images/ndtv.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-11" loading="lazy" width="250" height="130" src="images/oneindia.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-12" loading="lazy" width="250" height="130" src="images/paisawapas.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-13" loading="lazy" width="250" height="130" src="images/payback.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-14" loading="lazy" width="250" height="130" src="images/unidays.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-15" loading="lazy" width="250" height="130" src="images/zinzoy.png" />
+                    </div>
+                    <div class="mx-2 w-[215px]  mr-2 bg-[#211515] imageSlide">
+                        <img alt="logo-16" loading="lazy" width="250" height="130" src="images/zyzillion.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Section Part Html Start -->
+        <div class="bg-transparent flex items-center justify-center relative mt-0 sm:mt-10 h-full">
+            <div class="w-[100%] h-full relative sm:relative footer-banner">
+                <div class="flex flex-col w-1/2 absolute left-6 sm:left-24 top-8 sm:top-32 sm:pr-20">
+                    <h2
+                        class="sm:pt-10 text-[14px] sm:pl-0 sm:text-4xl leading-normal sm:leading-[39px] font-bold capitalize">
+                        Grow New Horizon by engaging in effective Partnership Program
+                    </h2>
+                    <a class="sm:mt-5" href="contact.html">
+                        <button
+                            class="mt-3 sm:mt-5 text-base sm:text-lg font-[700] sm:font-medium bg-orange-600 text-white-600 border border-orange-600 rounded-xl px-4 sm:px-10 py-1 sm:py-4 mr-2 orange-btn"
+                            style="color:#ffffff">Let’s Connect<span class="bg"></span>
+                        </button>
+                    </a>
+                </div>
+                <img alt="image" loading="lazy" width="1440" height="548" class="!h-auto"
+                    style="color:transparent;width:100%;height:auto" sizes="100vw" src="images/footerBanner.webp" />
+            </div>
+        </div>
+        <!-- Section Part Html End -->
+
+        <!-- Footer Part Html Start -->
+        <footer class="w-100 bg-[#FFF8F1] text-black py-2 px-3 md:p-12 sm:p-12 sm:py-8">
+            <div class="container mx-auto flex flex-col sm:flex-row justify-between m-10 mb-0">
+                <div class="flex items-start justify-center sm:justify-start flex-col  border-b sm:border-b-0">
+                    <a class="w-[260px] h-[80px] mr-2" href="index.html">
+                        <img alt="logo" loading="lazy" width="250" height="70" src="images/footerLogo.png">
+                    </a>
+                    <p class="pt-10 pl-0  font-mulish font-bold">Shoogloo Network Private Limited</p>
+                    <p class="pt-2 pl-0  font-mulish text-[14px] font-bold">Address:</p>
+                    <p class="pt-2 pl-0  font-mulish text-[14px] tracking-normal">UNIT 461 – 463, 4th Floor,</p>
+                    <p class="pt-1 pl-0  font-mulish text-[14px] tracking-normal">JMD Megapolis, Sector 48,</p>
+                    <p class="pt-1 pl-0  font-mulish text-[14px]  tracking-normal"> Gurgaon, Haryana – 122001, India 
+                    </p>
+                </div>
+                <div class="flex items-start justify-between">
+                    <div class="pt-2">
+                        <h3
+                            class="mb-2 text-black font-mulish  text-[16px] sm:text-lg capitalize font-medium leading-normal tracking-tight">
+                            Newsletter</h3>
+                        <p
+                            class="text-black font-gilroy  text-[28px] sm:text-4xl font-light leading-normal capitalize py-1 sm:py-4">
+                            Stay up to date</p>
+                        <div class="flex items-center flex-col relative">
+                            <div class="flex items-center border-b border-black py-3">
+                                <div class="mr-2"><svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5" clip-path="url(#clip0_124_3384)">
+                                            <path
+                                                d="M14.3689 2.96367C14.3084 2.95742 14.2473 2.95742 14.1867 2.96367H1.74227C1.66251 2.9649 1.58328 2.97685 1.50671 2.99922L7.92894 9.39478L14.3689 2.96367Z"
+                                                fill="black"></path>
+                                            <path
+                                                d="M15.0267 3.58154L8.55557 10.026C8.38902 10.1915 8.16373 10.2845 7.9289 10.2845C7.69407 10.2845 7.46878 10.1915 7.30223 10.026L0.888899 3.63043C0.869183 3.70289 0.85873 3.77756 0.857788 3.85265V12.7415C0.857788 12.9773 0.951439 13.2034 1.11814 13.3701C1.28484 13.5368 1.51093 13.6304 1.74668 13.6304H14.1911C14.4269 13.6304 14.653 13.5368 14.8197 13.3701C14.9864 13.2034 15.08 12.9773 15.08 12.7415V3.85265C15.0765 3.76006 15.0585 3.66858 15.0267 3.58154ZM2.35557 12.7415H1.73779V12.106L4.9689 8.90154L5.59557 9.52821L2.35557 12.7415ZM14.1822 12.7415H13.56L10.32 9.52821L10.9467 8.90154L14.1778 12.106L14.1822 12.7415Z"
+                                                fill="black"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_124_3384">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0 0.297119)"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <div class="ml-2 bg-[#FFF8F1]"><input type="email" id="email"
+                                        class="w-[300px] bg-[#FFF8F1] focus:outline-none outline-none text-sm font-medium"
+                                        placeholder="Enter Email Address" name="email" value=""></div>
+                            </div>
+                        </div>
+                        <div class="w-[175px] mt-10"><button
+                                class="flex items-center justify-center border-orange-600 rounded-full w-[175px] text-white text-[20px] leading-[normal] tracking-normal p-2 orange-btn z-50 cursor-pointer"><span
+                                    class="text-lg mt-1 font-semibold uppercase">Subscribe</span><span
+                                    class="bg"></span></button></div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between">
+                    <div class="pt-2 mb-4">
+                        <h3
+                            class="mb-2 text-black font-mulish text-lg capitalize font-medium leading-normal tracking-tight">
+                            Quick Links</h3>
+                        <ul class="text-sm pt-2">
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="about.html">About us</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="advertisers.html">Advertisers</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="publishers.html">Publishers</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="/login.html">Publisher Login</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="contact.html">Contact us</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li class="pl-0 p-2">
+                                <a class="text-black font-mulish text-sm font-medium leading-normal opacity-70"
+                                    href="cookies-policy.html">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto flex justify-center">
+                <div class="flex items-center justify-center w-full  md:w-1/4">
+                    <p class="text-black font-mulish text-sm font-normal leading-normal opacity-40 mt-10">© 2024
+                        Shoogloo.com</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Part Html End -->
+    </main>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Our Script JS -->
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slick-list').slick({
+                dots: false,           // Show navigation dots
+                infinite: true,       // Infinite loop sliding
+                speed: 300,           // Transition speed
+                slidesToShow: 1,      // Number of slides to show
+                slidesToScroll: 1,    // Number of slides to scroll
+                autoplay: false,       // Autoplay enabled
+                autoplaySpeed: 5000,  // Autoplay speed (2 seconds)
+            });
+        });
+
+        
+    </script>
+
+</body>
+
+</html>

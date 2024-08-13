@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shoogloo-Network</title>
+    <!-- Fevicon Icon CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <!-- Font Awesome CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="wrapper-page">
+        <div class="login-card">
+            <div class="text-center">
+                <a href="/login.html" class="logo-lg">
+                    <logo><img src="images/logo.png" class="img-fluid" style="max-width: 100%; height: auto;"></logo>
+                </a>
+            </div>
+            <form class="form-horizontal m-t-20" action="" method="post" id="login-form">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <input class="form-control" type="text" required="" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <input class="form-control" id="loginPassword" type="password" name="password" required=""
+                            placeholder="Password">
+                    </div>
+                    <input type="hidden" id="isPassEncoded" name="is_pass_encoded" value="false">
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="checkbox checkbox-primary">
+                            <input id="checkbox-signup" name="remember_me" value="1" type="checkbox">
+                            <label for="checkbox-signup">
+                                Remember me (30 days)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group text-right m-t-20">
+                    <div class="col-xs-12">
+                        <button class="btn btn-rounded  btn-primary btn-custom w-md waves-effect waves-light"
+                            type="submit">Log In</button>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row justify-content-between flex m-t-30">
+                    <div class="col-xs-7">
+                        <a href="/forgotpassword.html" class="text-muted"><i class="fa fa-lock m-r-5"></i> Forgot
+                            your password?</a>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                        <a href="/register.html" class="text-muted">Create an account</a>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <h5 class="view-termbox">
+                        - View our <a target="_blank" href="">Privacy Policy</a><br>
+                        - You must have <a target="_blank" href="https://www.google.com/cookies.html">cookies  enabled</a> to use this site (cookies enabled) 
+                            <a target="_blank" href="">terms and conditions</a>
+                    </h5>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="width-100 text-left">Powered by <a href="https://trackier.com/?utm_source=webapp&amp;utm_medium=shoogloo" target="_blank">Trackier</a> 2024 | <a href="https://trackier.com/privacy-policy/" target="_blank">Privacy Policy</a></div>
+            </div>
+        </div>
+    </footer>
+    
+<style>
+    body, html {
+        background: #f2f4f8;
+        color: #444444;
+        height: 100vh;
+        width: 100%;
+    }
+</style>
+<script>
+    function encrypt() {
+        let pass = $("#loginPassword").val();
+        $("#loginPassword").val(btoa(pass));
+        $('#isPassEncoded').val('true');
+        return true;
+    }
+    $("#login-form").submit(function(e){
+        e.preventDefault();
+        if (!$(this)[0].reportValidity() || !encrypt()) return;       
+        $(this).submit();
+    });
+</script>
+</body>
+
+</html>
